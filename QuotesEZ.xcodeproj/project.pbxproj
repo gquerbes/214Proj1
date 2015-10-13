@@ -14,6 +14,8 @@
 		741152D61BB2200E002A0043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741152D41BB2200E002A0043 /* LaunchScreen.storyboard */; };
 		741152E11BB2200F002A0043 /* QuotesEZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741152E01BB2200F002A0043 /* QuotesEZTests.swift */; };
 		741152EC1BB2200F002A0043 /* QuotesEZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741152EB1BB2200F002A0043 /* QuotesEZUITests.swift */; };
+		745FE5431BC49E32006C31E9 /* ColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745FE5421BC49E32006C31E9 /* ColorStruct.swift */; settings = {ASSET_TAGS = (); }; };
+		74779F021BBB68BD002E39A1 /* QuotesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74779F011BBB68BD002E39A1 /* QuotesClass.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		741152E71BB2200F002A0043 /* QuotesEZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesEZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		741152EB1BB2200F002A0043 /* QuotesEZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesEZUITests.swift; sourceTree = "<group>"; };
 		741152ED1BB2200F002A0043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745FE5421BC49E32006C31E9 /* ColorStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStruct.swift; sourceTree = "<group>"; };
+		74779F011BBB68BD002E39A1 /* QuotesClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				741152D21BB2200E002A0043 /* Assets.xcassets */,
 				741152D41BB2200E002A0043 /* LaunchScreen.storyboard */,
 				741152D71BB2200E002A0043 /* Info.plist */,
+				74779F011BBB68BD002E39A1 /* QuotesClass.swift */,
+				745FE5421BC49E32006C31E9 /* ColorStruct.swift */,
 			);
 			path = QuotesEZ;
 			sourceTree = "<group>";
@@ -255,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745FE5431BC49E32006C31E9 /* ColorStruct.swift in Sources */,
 				741152CE1BB2200E002A0043 /* ViewController.swift in Sources */,
 				741152CC1BB2200E002A0043 /* AppDelegate.swift in Sources */,
+				74779F021BBB68BD002E39A1 /* QuotesClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +489,7 @@
 				741152F21BB2200F002A0043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		741152F31BB2200F002A0043 /* Build configuration list for PBXNativeTarget "QuotesEZTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +498,7 @@
 				741152F51BB2200F002A0043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		741152F61BB2200F002A0043 /* Build configuration list for PBXNativeTarget "QuotesEZUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +507,7 @@
 				741152F81BB2200F002A0043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

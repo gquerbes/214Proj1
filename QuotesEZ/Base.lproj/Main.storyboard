@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuotesEZ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gabriel Querbes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3p-0g-5qW">
+                                <rect key="frame" x="104" y="184" width="392" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="6fh-i2-cEE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.2213930325" green="0.53184185610000001" blue="0.021189843940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxL-11-b7u">
+                                <rect key="frame" x="238" y="369" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="V63-P2-Tos"/>
+                                </constraints>
+                                <state key="normal" title="Get New Quote"/>
+                                <connections>
+                                    <action selector="btnTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTP-ci-8YA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiN-1c-T6Y">
+                                <rect key="frame" x="229" y="28" width="142" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="kH2-oU-QLj"/>
+                                    <constraint firstAttribute="height" constant="54" id="zDD-pj-nIF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iiN-1c-T6Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Fsr-Ho-1MW"/>
+                            <constraint firstItem="X3p-0g-5qW" firstAttribute="centerX" secondItem="iiN-1c-T6Y" secondAttribute="centerX" id="IO5-NP-5i9"/>
+                            <constraint firstItem="X3p-0g-5qW" firstAttribute="centerX" secondItem="NxL-11-b7u" secondAttribute="centerX" id="KNr-Ck-vte"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NxL-11-b7u" secondAttribute="bottom" constant="201" id="Q1i-7Z-goD"/>
+                            <constraint firstItem="X3p-0g-5qW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="184" id="QFe-XU-WP6"/>
+                            <constraint firstItem="X3p-0g-5qW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="ee0-kk-Hss"/>
+                            <constraint firstItem="iiN-1c-T6Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nvR-Xz-JDU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblDateLabel" destination="iiN-1c-T6Y" id="P12-Zv-bG7"/>
+                        <outlet property="lblQuote" destination="X3p-0g-5qW" id="zQL-JO-oTJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="591" y="379"/>
         </scene>
     </scenes>
 </document>
