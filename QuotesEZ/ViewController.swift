@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             }
     }
    
-    //function used to generate random quotes, is called by other functions.
+    //function used to generate random quotes, is called by other functions .
     func UpdateQuotesLabel(){
         let quotes = QuotesClass()
         //take 3 milliseconds to animate the alpha of the label.
